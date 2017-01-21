@@ -12,7 +12,7 @@ Our success as a company rests on our ability to execute and change direction qu
 
 ## **Instructions**
 
-You will build a bot. This is intentionally open-ended, but many (free) resources and tutorials have been curated for you and are in the section below, *resources*. You’ll make decisions such as:
+You will build a bot. This is intentionally open-ended, but many (free) resources and tutorials have been curated for you and are in the section below, [Resources](https://github.com/Revmaker/coding-exercise-bot/blob/master/README.md#resources). You’ll make decisions such as:
 
 * Should you code everything from scratch, start with a framework like Botkit, or use a more all-in-one GUI like API.ai?
 
@@ -47,7 +47,7 @@ We understand that you have a job and a life. Things come up. As long as your co
 
 [GoMix Bots](https://gomix.com/community/handy-bots)
 
-#### *Content*
+#### *Useful APIs*
 
 [WolframAlpha](http://products.wolframalpha.com/api/) - Knows a lot of facts. Siri uses to answer questions
 
