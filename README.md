@@ -71,11 +71,11 @@ We understand that you have a job and a life. Things come up. As long as your co
 
 ## **FYI**
 
-**Appendix I - Background on our Product**
+**Background on our Product**
 
 CarLabs’ primary product is Carla - a bot that can talk about and give advice on car-related decisions. As such, we face many interesting challenges. An obvious one is how to understand and process natural language. However, another interesting challenge is designing a user interface and experience in a conversational setting. We believe the industry is in the early days of solving this problem.
 
-**Appendix II - Our Stack**
+**Our Stack**
 
 CarLabs’ web applications are written in React (though some prototypes are still being ported from jQuery). However, as a messaging product, one of Carla’s front-ends is Messenger - a rigid, non-customizable platform (with the exception of webviews, a new addition). We also see Carla living, potentially, on Amazon Echo/Google Home.
 
