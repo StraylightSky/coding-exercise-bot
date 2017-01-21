@@ -12,7 +12,9 @@ Our success as a company rests on our ability to execute and change direction qu
 
 ## **Instructions**
 
-You will build a bot. This is intentionally open-ended, but many (free) resources and tutorials have been curated for you and are in the section below, [Resources](https://github.com/Revmaker/coding-exercise-bot/blob/master/README.md#resources). You’ll make decisions such as:
+You will build a bot. This is intentionally open-ended, but many (free) resources and tutorials have been curated for you and are in the section below, [Resources](https://github.com/Revmaker/coding-exercise-bot/blob/master/README.md#resources). You're welcome to make any bot you can imagine, but we have listed some ideas so you don't have to come up with a product: [Ideas](https://github.com/Revmaker/coding-exercise-bot/blob/master/README.md#ideas).
+
+You’ll make decisions such as:
 
 * Should you code everything from scratch, start with a framework like Botkit, or use a more all-in-one GUI like API.ai?
 
@@ -30,6 +32,11 @@ You will build a bot. This is intentionally open-ended, but many (free) resource
 
 ## **Timeline**
 We understand that you have a job and a life. Things come up. As long as your commits are small, it's obvious from your commit history how you worked on the project. Given that, we are flexible about the period of time you work in. We estimate this will take 3-5 days, given your other responsibilities, but just keep us posted if the timeline is different.
+
+## **Ideas**
+- Build a simple bot on API.ai ([tutorial](https://www.sitepoint.com/how-to-build-your-own-ai-assistant-using-api-ai/)), and make a HTML/CSS/JS front-end for it
+- Make a front end for, and add functionality to [Port Namer](https://github.com/odannyc/portnamer)
+- Use a [computer vision API](https://www.sighthound.com/products/cloud) to make a Messenger bot that can tell you what cars are in a picture
 
 ## **Resources**
 
