@@ -61,7 +61,9 @@ We understand that you have a job and a life. Things come up. As long as your co
 
 [Heroku](https://www.heroku.com/)
 
-#### *Other*
+#### *Tutorials and other useful projects*
+
+[Building a bot with API.ai](https://www.sitepoint.com/how-to-build-your-own-ai-assistant-using-api-ai/)
 
 [React Chat App](https://medium.com/front-end-hacking/react-webpack-and-horizon-quick-start-b9335c1ece53#.je2aeupxx)
 
