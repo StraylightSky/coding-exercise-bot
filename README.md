@@ -35,7 +35,7 @@ We understand that you have a job and a life. Things come up. As long as your co
 
 ## **Ideas**
 - Build a simple bot on API.ai ([tutorial](https://www.sitepoint.com/how-to-build-your-own-ai-assistant-using-api-ai/)), and make a HTML/CSS/JS front-end for it
-- Make a front end for, and add functionality to [Port Namer](https://github.com/odannyc/portnamer)
+- Make a web or Messenger front end for, and add functionality to [Port Namer](https://github.com/odannyc/portnamer)
 - Use a [computer vision API](https://www.sighthound.com/products/cloud) to make a Messenger bot that can tell you what cars are in a picture
 
 ## **Resources**
