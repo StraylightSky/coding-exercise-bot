@@ -24,14 +24,14 @@ You’ll make decisions such as:
 
 #### TODO
 
-1. Clone this repo and rename this file to INSTRUCTIONS.md - we want to know that you use Git(Hub) effectively, and we’ll use your git history and commit messages to understand what you did
+1. Clone this repo and rename this file to `INSTRUCTIONS.md` - we want to know that you use Git(Hub) effectively, and we’ll use your git history and commit messages to understand what you did. NOTE: if you are starting with a cloned repo (a tutorial, a bot that you are extending, etc), then you can just add this file as `INSTRUCTIONS.md` without cloning this repo.
 
-2. Create a README.md and use it to document instructions and explain why you made decisions
+2. Create a `README.md` and use it to document instructions and explain why you made decisions
 
 3. Get coding! The cloned repo should be all we need to understand what you did and why.
 
 ## **Timeline**
-We understand that you have a job and a life. Things come up. As long as your commits are small, it's obvious from your commit history how you worked on the project. Given that, we are flexible about the period of time you work in. We estimate this will take 3-5 days, given your other responsibilities, but just keep us posted if the timeline is different.
+We understand that you have a job and a life. Things come up. As long as your commits are small, it's obvious from your commit history how you worked on the project. Given that, we are flexible about the period of time you work in. We estimate this will take 3-5 days, given your other responsibilities, but just keep us posted if the timeline is different. Communication is important, so feel free to contact any of us with any questions, concerns, or request for clarification.
 
 ## **Ideas**
 - Build a simple bot on API.ai ([tutorial](https://www.sitepoint.com/how-to-build-your-own-ai-assistant-using-api-ai/)), and make a HTML/CSS/JS front-end for it
@@ -91,3 +91,6 @@ CarLabs’ web applications are written in React (though some prototypes are sti
 Backends are written in Node v6, with Redis for caching, PostgreSQL for persistence, Flow for types (when needed), and Hapi or Express depending on the size of the application. Tests are written in Elixir. CarLabs’ data pipeline is a PHP7/MySQL application, with services written in PHP, Python, and R.
 
 Parts of our stack are Dockerized, and we continue to move in that direction. In production, we are currently all-AWS, but since we won a Joyent competition, we are testing out their cloud as well.
+
+**Contact Info**
+Sam is best reachable on Slack. If you are reading this, you should have recieved a single-channel guest invite to our company Slack.
