@@ -4,6 +4,7 @@ This readme will serve as the update history for this exercise.
 I'm hoping to complete everything I want within the 3-5 day time period.
 
 The main goals that I want to accomplish for this are:
+
 1. Showcase my skillset in a meaningful way
 2. Use as much of the tech listed in the "Our Stack" section of the original readme
 
