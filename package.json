@@ -1,0 +1,11 @@
+{
+  "name": "coding-exercise-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Revmaker/coding-exercise-bot.git",
+  "author": "Ryan Chua <ryan.s.chua@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.4.9"
+  }
+}
