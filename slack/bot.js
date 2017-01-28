@@ -1,5 +1,4 @@
 // Heavily influenced by Botkit's slack_bot.js starting point
-
 'use strict';
 
 if (!process.env.token) {

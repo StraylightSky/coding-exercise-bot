@@ -16,3 +16,16 @@ I wanted to start things off simple. Seeing as Botkit seems to have an extensive
 Rick and Morty is one of my favorite shows, so I figured a Mr. Meeseeks bot would be fun to work on. It's a very naive chat bot, but I plan to come back to make him a little more robust with the way he responds with what he 'hears'.
 
 My next goal is to do something with Messenger, then finally move on to creating a bot via API.ai.
+
+## **28 January 2017**
+
+Decided to go the route of building out a front end with React today. Bot will most likely be made with API.ai.
+
+The following goals may include some assumptions based on what I was able to skim through on the API.ai site.
+
+They may not be 100% accurate, but I want to have a set plan for myself first to make sure I stay on track.
+
+Goals for this implementation:
+1. Make chat bot through API.ai
+2. Allow input and produce output to React app
+3. Make mobile responsive
