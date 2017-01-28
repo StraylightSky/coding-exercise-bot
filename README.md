@@ -4,6 +4,7 @@ This readme will serve as the update history for this exercise.
 I'm hoping to complete everything I want within the 3-5 day time period.
 
 The main goals that I want to accomplish for this are:
+
 1. Showcase my skillset in a meaningful way
 2. Use as much of the tech listed in the "Our Stack" section of the original readme
 
@@ -26,6 +27,7 @@ The following goals may include some assumptions based on what I was able to ski
 They may not be 100% accurate, but I want to have a set plan for myself first to make sure I stay on track.
 
 Goals for this implementation:
+
 1. Make chat bot through API.ai
-2. Allow input and produce output to React app
+2. Allow user input and show output in React app
 3. Make mobile responsive
