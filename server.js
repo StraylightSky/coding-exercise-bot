@@ -3,8 +3,11 @@
 const Hapi = require('hapi');
 const Path = require('path');
 const Inert = require('inert');
+const dotenv = require('dotenv');
 
 const server = new Hapi.Server();
+
+dotenv.config();
 
 server.connection({
   host: 'localhost',
@@ -53,6 +56,15 @@ server.route({
     file: {
       path: Path.join(__dirname, '/react/index.html')
     }
+  }
+});
+
+// API routes
+server.route({
+  method: 'GET',
+  path: '/api/v1',
+  handler: (request, reply) => {
+    reply({ data: 'test data' })
   }
 });
 
