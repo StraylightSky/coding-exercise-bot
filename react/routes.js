@@ -1,6 +1,7 @@
 'use strict';
 
 const Path = require('path');
+const api = require(Path.join(__dirname, '/api/v1/api'));
 
 module.exports = [
   // Serve static files
@@ -9,7 +10,7 @@ module.exports = [
     path: '/assets/js/{file*}',
     handler: {
       directory: {
-        path: Path.join(__dirname, '../../assets/js')
+        path: Path.join(__dirname, '/assets/js')
       }
     }
   },
@@ -18,7 +19,7 @@ module.exports = [
     path: '/assets/css/{file*}',
     handler: {
       directory: {
-        path: Path.join(__dirname, '../../assets/css')
+        path: Path.join(__dirname, '/assets/css')
       }
     }
   },
@@ -27,7 +28,7 @@ module.exports = [
     path: '/assets/img/{file*}',
     handler: {
       directory: {
-        path: Path.join(__dirname, '../../assets/img')
+        path: Path.join(__dirname, '/assets/img')
       }
     }
   },
@@ -38,17 +39,22 @@ module.exports = [
     path: '/',
     handler: {
       file: {
-        path: Path.join(__dirname, '../../index.html')
+        path: Path.join(__dirname, '/index.html')
       }
     }
   },
 
   // API routes
   {
-    method: 'GET',
+    method: 'POST',
     path: '/api/v1/test',
+    handler: api.handlePost
+  },
+  {
+    method: 'POST',
+    path: '/api/v1/message',
     handler: (request, reply) => {
-      reply({data: 'test data'})
+      console.log(request);
     }
   }
 ];

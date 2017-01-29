@@ -5,7 +5,7 @@ const Path = require('path');
 const Inert = require('inert');
 const dotenv = require('dotenv').config();
 
-const routes = require(Path.join(__dirname, '/react/api/v1/routes'));
+const routes = require(Path.join(__dirname, '/react/routes'));
 
 const server = new Hapi.Server();
 

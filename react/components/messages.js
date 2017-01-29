@@ -1,17 +1,39 @@
 import React from 'react';
 import Message from './message';
+import axios from 'axios';
 
 class Messages extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      convo: [
-        {text: 'sup, nerd', sender: 'rick'},
-        {text: 'rick, i-i-i don\'t think it\'s polite to c-call a random stranger a nerd', sender: 'morty'},
-        {text: 'whatever, morty. look at \'em, th-they\'re obv-*buuuurp*-iously a nerd', sender: 'rick'}
-      ]
+      convo: [],
+      value: ''
     };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    axios.post('/api/v1/test', {
+      text: this.state.value
+    })
+    .then(function(response) {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+    let convoCopy = this.state.convo;
+    convoCopy.push({text: this.state.value, sender: 'me'});
+
+    this.setState({convo: convoCopy});
   }
 
   render() {
@@ -20,8 +42,14 @@ class Messages extends React.Component {
     });
 
     return (
-      <div className="container">
-        {messages}
+      <div>
+        <div className="container">
+          {messages}
+        </div>
+        <div>
+          <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} />
+          <button className="btn" onClick={this.handleSubmit.bind(this)}>Send</button>
+        </div>
       </div>
     );
   }
