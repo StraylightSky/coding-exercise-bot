@@ -20,7 +20,7 @@ My next goal is to do something with Messenger, then finally move on to creating
 
 ## **28 January 2017**
 
-Decided to go the route of building out a front end with React today. Bot will most likely be made with API.ai.
+Decided to go the route of building out a front end with React today. Bot will most likely be made with API.ai. I decided to put the Messenger bot on the backburner, since it does not allow me to show any custom front-end work.
 
 The following goals may include some assumptions based on what I was able to skim through on the API.ai site.
 
@@ -28,6 +28,7 @@ They may not be 100% accurate, but I want to have a set plan for myself first to
 
 Goals for this implementation:
 
-1. Make chat bot through API.ai
+1. Make chat bot ~~through API.ai~~ through recast.ai
+  * Seems like API.ai no longer allows for free API access to domains without upgrading your account?
 2. Allow user input and show output in React app
 3. Make mobile responsive

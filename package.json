@@ -6,11 +6,13 @@
   "author": "Ryan Chua <ryan.s.chua@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.15.3",
     "botkit": "^0.4.9",
     "hapi": "^16.1.0",
     "inert": "^4.1.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "recastai": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
