@@ -2,6 +2,14 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import derps from './components/test';
+import TextInput from './components/text-input';
 
-console.log(derps);
+class ChatArea extends React.Component {
+  render() {
+    return (
+      <TextInput />
+    );
+  }
+}
+
+ReactDOM.render(<ChatArea />, document.getElementById('chatArea'));
