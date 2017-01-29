@@ -10,7 +10,13 @@ let Botkit = require('botkit');
 
 // "Existence is pain to a Meeseeks, Jerry."
 let frustrationCounter = 0;
-let frustratedResponses = ['Aww c\'mon!', 'I can\'t take this anymore! I just wanna die!'];
+let frustratedReplies = [
+  'Aww c\'mon!',
+  'I can\'t take this anymore! I just wanna die!',
+  'Meeseeks are not born into this world fumbling for meaning! We are created to serve a singular purpose for which we will go to any lengths to fulfill!'
+];
+
+let replies = ['Yessiree!', 'Ooooh OK!', 'Ooooh yeah~! Yessiree!', 'Can do! I\'m Mr. Meeseeks!'];
 
 let controller = Botkit.slackbot({
   debug: true,
@@ -20,8 +26,36 @@ let bot = controller.spawn({
   token: process.env.token
 }).startRTM();
 
+function formatUptime(uptime) {
+  let unit = 'second';
+  if (uptime > 60) {
+    uptime = uptime / 60;
+    unit = 'minute';
+  }
+  if (uptime > 60) {
+    uptime = uptime / 60;
+    unit = 'hour';
+  }
+  if (uptime != 1) {
+    unit = unit + 's';
+  }
+
+  uptime = uptime + ' ' + unit;
+  return uptime;
+}
+
+function returnRandomReply(repliesArray) {
+  let randomIndex = Math.floor(Math.random() * repliesArray.length);
+
+  return repliesArray[randomIndex];
+}
+
 controller.hears(['hello', 'hi'], 'direct_message,direct_mention,mention', (bot, message) => {
   bot.reply(message, 'Hello! I\'m Mr. Meeseeks! Look at me!!');
+});
+
+controller.hears(['can you (.*)', 'help me (.*)'], 'direct_message,direct_mention,mention', (bot, message) => {
+  bot.reply(message, returnRandomReply(replies));
 });
 
 // Jerry special
@@ -59,9 +93,11 @@ controller.hears(['thanks mr. meeseeks', 'thanks'], 'direct_message,direct_menti
         callback: (response, convo) => {
           frustrationCounter += 1;
 
-          // TODO: Pseudo-randomly choose a frustrated response
-          if (frustrationCounter > 3) {
-            convo.say('Awww c\'mon!');
+          if (frustrationCounter > 2) {
+            let uptime = formatUptime(process.uptime);
+
+            convo.say(returnRandomReply(frustratedReplies));
+            convo.say('I\'ve been alive for ' + uptime + '! That\'s an eternity to a Meeseeks!!');
           } else {
             convo.say('That\'s ok, I\'m Mr. Meeseeks, look at me!');
           }
