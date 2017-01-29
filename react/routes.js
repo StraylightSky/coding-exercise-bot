@@ -47,14 +47,7 @@ module.exports = [
   // API routes
   {
     method: 'POST',
-    path: '/api/v1/test',
-    handler: api.handlePost
-  },
-  {
-    method: 'POST',
     path: '/api/v1/message',
-    handler: (request, reply) => {
-      console.log(request);
-    }
+    handler: api.handlePost
   }
 ];

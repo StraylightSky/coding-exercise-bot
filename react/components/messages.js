@@ -20,17 +20,20 @@ class Messages extends React.Component {
   }
 
   handleSubmit(event) {
-    axios.post('/api/v1/test', {
+    let convoCopy = this.state.convo;
+
+    axios.post('/api/v1/message', {
       text: this.state.value
     })
-    .then(function(response) {
-      console.log(response);
+    .then((response) => {
+      convoCopy.push({text: response.data, sender: 'rick'})
+
+      this.setState({convo: convoCopy});
     })
     .catch((error) => {
       console.log(error);
     });
 
-    let convoCopy = this.state.convo;
     convoCopy.push({text: this.state.value, sender: 'me'});
 
     this.setState({convo: convoCopy});

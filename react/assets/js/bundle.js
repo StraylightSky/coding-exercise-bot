@@ -21585,15 +21585,20 @@
 	  }, {
 	    key: 'handleSubmit',
 	    value: function handleSubmit(event) {
-	      _axios2.default.post('/api/v1/test', {
+	      var _this2 = this;
+
+	      var convoCopy = this.state.convo;
+
+	      _axios2.default.post('/api/v1/message', {
 	        text: this.state.value
 	      }).then(function (response) {
-	        console.log(response);
+	        convoCopy.push({ text: response.data, sender: 'rick' });
+
+	        _this2.setState({ convo: convoCopy });
 	      }).catch(function (error) {
 	        console.log(error);
 	      });
 
-	      var convoCopy = this.state.convo;
 	      convoCopy.push({ text: this.state.value, sender: 'me' });
 
 	      this.setState({ convo: convoCopy });
