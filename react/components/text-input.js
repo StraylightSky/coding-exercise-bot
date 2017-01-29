@@ -16,7 +16,7 @@ export default class TextInput extends React.Component {
     return (
       <div>
         <input type="text" value={this.state.value} onChange={this.handleChange} />
-        <button>Send</button>
+        <button className="btn">Send</button>
       </div>
     );
   }
