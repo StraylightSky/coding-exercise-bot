@@ -58,26 +58,24 @@ class Messages extends React.Component {
     });
 
     return (
-      <div className="chat">
-        <form onSubmit={this.handleSubmit.bind(this)}>
-          <div className="messages-header">
-            <div className="conversation-info">
-              <img src={'../assets/img/rick.jpg'} className="img" alt="picture of rick sanchez" />
-              <h4 className="bot-name">Rick Sanchez</h4>
-              <br className="clearfix"/>
-            </div>
+      <form onSubmit={this.handleSubmit}>
+        <div className="messages-header">
+          <div className="conversation-info">
+            <img src={'../assets/img/rick.jpg'} className="img" alt="picture of rick sanchez" />
+            <h4 className="bot-name">Rick Sanchez</h4>
+            <br className="clearfix"/>
           </div>
-          <div className="messages-container">
-            {messages}
-            <div className="scroll-to-me" ref={(el) => { this.messagesEnd = el; }}></div>
-          </div>
-          <div className="input-container">
-            <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} 
-              placeholder="Type your message here..." />
-            <button type="submit" className="btn">Send</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div className="messages-container">
+          {messages}
+          <div className="scroll-to-me" ref={(el) => { this.messagesEnd = el; }}></div>
+        </div>
+        <div className="input-container">
+          <input type="text" value={this.state.value} onChange={this.handleChange} 
+            placeholder="Type your message here..." />
+          <button type="submit" className="btn">Send</button>
+        </div>
+      </form>
     );
   }
 }

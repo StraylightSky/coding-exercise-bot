@@ -1,7 +1,16 @@
+/*
+================================
+            Elements
+================================
+*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  padding-top: 15px;
 }
 
 html {
@@ -13,47 +22,82 @@ html {
 }
 
 input {
+  border: solid 1px #a7a7a7;
   border-radius: 3px;
-  border-color: #A7A7A7;
-  border-width: 1px;
-  border-style: solid;
   width: 400px;
   display: block;
   margin-bottom: 5px;
   padding: 10px;
 }
 
-.messages-container, .messages-header {
-  background-color: #ecf0f1;
-  border-radius: 3px;
-}
-
-.input-container {
-  width: 400px;
+/*
+================================
+              Base
+================================
+*/
+.row {
   margin: 0 auto;
+  max-width: 1140px;
 }
 
 .btn {
   font-weight: 600;
   float: right;
-  padding: 5px;
+  padding-top: 5px;
   background-color: white;
   color: #2ecc71;
-  border-radius: 10px;
   border-style: none;
-  transition: background-color 0.3s;
 }
 
 .btn:hover {
   cursor: pointer;
 }
 
-.chat {
-  padding-top: 15px;
-}
-
 .clearfix, .scroll-to-me {
   clear: both;
+}
+
+.img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  border: solid 2px #2ecc71;
+}
+
+/*
+================================
+        Messages Header
+================================
+*/
+.bot-name {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 15px;
+  text-align: right;
+}
+
+.messages-header {
+  color: #2c3e50;
+  margin-bottom: 3px;
+  padding: 10px;
+}
+
+/*
+================================
+   Messages & Input Container
+================================
+*/
+.input-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.messages-container, .messages-header {
+  background-color: #ecf0f1;
+  border-radius: 3px;
 }
 
 .messages-container {
@@ -64,12 +108,6 @@ input {
   padding: 15px;
 }
 
-.messages-header {
-  color: #2c3e50;
-  margin-bottom: 3px;
-  padding: 10px;
-}
-
 .message {
   display: inline-block;
   margin-bottom: 15px;
@@ -78,46 +116,27 @@ input {
   color: white;
 }
 
-.img {
-  float: left;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-position: center;
-  border-style: solid;
-  border-color: #2ecc71;
-  border-width: 2px;
-}
-
-.bot-name {
-  display: inline-block;
-  margin-top: 30px;
-  margin-left: 15px;
-  text-align: right;
-}
-
-.row {
-  margin: 0 auto;
-  max-width: 1140px;
-}
-
 .receiver, .receive, .scroll-to-me {
   float: left;
-}
-
-.sender, .sent {
-  float: right;
 }
 
 .receive {
   background-color: #3498db;
 }
 
+.sender, .sent {
+  float: right;
+}
+
 .sent {
   background-color: #2ecc71;
 }
 
+/*
+================================
+          Media queries
+================================
+*/
 @media only screen and (min-width : 320px) {
   .chat {
     padding-left: 15px;

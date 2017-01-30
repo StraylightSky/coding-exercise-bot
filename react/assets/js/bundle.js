@@ -21633,44 +21633,40 @@
 	      });
 
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'chat' },
+	        'form',
+	        { onSubmit: this.handleSubmit },
 	        _react2.default.createElement(
-	          'form',
-	          { onSubmit: this.handleSubmit.bind(this) },
+	          'div',
+	          { className: 'messages-header' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'messages-header' },
+	            { className: 'conversation-info' },
+	            _react2.default.createElement('img', { src: '../assets/img/rick.jpg', className: 'img', alt: 'picture of rick sanchez' }),
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'conversation-info' },
-	              _react2.default.createElement('img', { src: '../assets/img/rick.jpg', className: 'img', alt: 'picture of rick sanchez' }),
-	              _react2.default.createElement(
-	                'h4',
-	                { className: 'bot-name' },
-	                'Rick Sanchez'
-	              ),
-	              _react2.default.createElement('br', { className: 'clearfix' })
-	            )
-	          ),
+	              'h4',
+	              { className: 'bot-name' },
+	              'Rick Sanchez'
+	            ),
+	            _react2.default.createElement('br', { className: 'clearfix' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'messages-container' },
+	          messages,
+	          _react2.default.createElement('div', { className: 'scroll-to-me', ref: function ref(el) {
+	              _this3.messagesEnd = el;
+	            } })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'input-container' },
+	          _react2.default.createElement('input', { type: 'text', value: this.state.value, onChange: this.handleChange,
+	            placeholder: 'Type your message here...' }),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'messages-container' },
-	            messages,
-	            _react2.default.createElement('div', { className: 'scroll-to-me', ref: function ref(el) {
-	                _this3.messagesEnd = el;
-	              } })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'input-container' },
-	            _react2.default.createElement('input', { type: 'text', value: this.state.value, onChange: this.handleChange.bind(this),
-	              placeholder: 'Type your message here...' }),
-	            _react2.default.createElement(
-	              'button',
-	              { type: 'submit', className: 'btn' },
-	              'Send'
-	            )
+	            'button',
+	            { type: 'submit', className: 'btn' },
+	            'Send'
 	          )
 	        )
 	      );
