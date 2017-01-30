@@ -7,28 +7,10 @@ module.exports = [
   // Serve static files
   {
     method: 'GET',
-    path: '/assets/js/{file*}',
+    path: '/assets/{file*}',
     handler: {
       directory: {
-        path: Path.join(__dirname, '/assets/js')
-      }
-    }
-  },
-  {
-    method: 'GET',
-    path: '/assets/css/{file*}',
-    handler: {
-      directory: {
-        path: Path.join(__dirname, '/assets/css')
-      }
-    }
-  },
-  {
-    method: 'GET',
-    path: '/assets/img/{file*}',
-    handler: {
-      directory: {
-        path: Path.join(__dirname, '/assets/img')
+        path: Path.join(__dirname, '/assets')
       }
     }
   },
