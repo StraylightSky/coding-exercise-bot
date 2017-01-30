@@ -32,3 +32,9 @@ Goals for this implementation:
   * Seems like API.ai no longer allows for free API access to domains without upgrading your account?
 2. Allow user input and show output in React app
 3. Make mobile responsive
+
+## **29 January 2017**
+
+Rick bot set up through recast.ai with a handful of replies based on user intents. I'm having React display the messages, but it's definitely not pretty yet.
+
+Goals 1 and 2 from yesterday seem to be taken care of. From here it looks like it's just css work and some refinement to Rick bot. Hopefully I'll have time to experiment with an image recognition bot for Messenger afterwards.
