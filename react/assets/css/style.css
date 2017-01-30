@@ -124,7 +124,23 @@ input {
     padding-right: 15px;
   }
 
+  .messages-container {
+    height: 350px;
+  }
+
+  input, .input-container {
+    width: 290px;
+  }
+}
+
+@media only screen and (min-width : 400px) {
   input, .input-container {
     width: 370px;
+  }
+}
+
+@media only screen and (min-width : 640px) {
+  .messages-container {
+    height: 400px;
   }
 }
