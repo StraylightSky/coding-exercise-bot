@@ -38,3 +38,20 @@ Goals for this implementation:
 Rick bot set up through recast.ai with a handful of replies based on user intents. I'm having React display the messages, but it's definitely not pretty yet.
 
 Goals 1 and 2 from yesterday seem to be taken care of. From here it looks like it's just css work and some refinement to Rick bot. Hopefully I'll have time to experiment with an image recognition bot for Messenger afterwards.
+
+## **30 January 2017**
+
+Goals set on the 28th seem to be completed. Unsure if I will have enough time to get a Messenger bot fully functioning, but I'm reasonably happy with what I was able to complete.
+
+Doing some general clean up and refactoring if necessary.
+
+## **Retrospective**
+
+In the end, besides HTML/CSS, I was really only able to use React, Node, and Hapi when going through this exercise, which is why I'm only reasonably happy with my work.
+
+Things I could have done better:
+
+1. UI on chat bot with Rick is pretty minimal; the design could be improved
+2. I'm not sure if I followed best practices for React, so looking into that would be good
+3. Refining Rick's responses by training
+  * The responses are still pretty limited, with only 3 intents defined for possible user input
