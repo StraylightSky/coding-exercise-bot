@@ -29,7 +29,7 @@ class Messages extends React.Component {
       text: this.state.value
     })
     .then((response) => {
-      convoCopy.push({text: response.data, sender: 'Rick'})
+      convoCopy.push({text: response.data, sender: 'Rick', type: 0})
 
       this.setState({convo: convoCopy});
     })
@@ -37,7 +37,7 @@ class Messages extends React.Component {
       console.log(error);
     });
 
-    convoCopy.push({text: this.state.value, sender: 'Me'});
+    convoCopy.push({text: this.state.value, sender: 'Me', type: 1});
 
     this.setState({convo: convoCopy, value: ''});
   }

@@ -10,13 +10,13 @@ export default class Message extends React.Component {
   render() {
     let textClasses = cx({
       'message': true,
-      'receive': this.props.msg.sender === 'Rick',
-      'sent': this.props.msg.sender === 'Me'
+      'receive': this.props.msg.type === 0,
+      'sent': this.props.msg.type === 1
     });
 
     let senderClasses = cx({
-      'receiver': this.props.msg.sender === 'Rick',
-      'sender': this.props.msg.sender === 'Me'
+      'receiver': this.props.msg.type === 0,
+      'sender': this.props.msg.type === 1
     });
 
     return (

@@ -21598,14 +21598,14 @@
 	      _axios2.default.post('/api/v1/message', {
 	        text: this.state.value
 	      }).then(function (response) {
-	        convoCopy.push({ text: response.data, sender: 'Rick' });
+	        convoCopy.push({ text: response.data, sender: 'Rick', type: 0 });
 
 	        _this2.setState({ convo: convoCopy });
 	      }).catch(function (error) {
 	        console.log(error);
 	      });
 
-	      convoCopy.push({ text: this.state.value, sender: 'Me' });
+	      convoCopy.push({ text: this.state.value, sender: 'Me', type: 1 });
 
 	      this.setState({ convo: convoCopy, value: '' });
 	    }
@@ -21723,13 +21723,13 @@
 	    value: function render() {
 	      var textClasses = (0, _classnames2.default)({
 	        'message': true,
-	        'receive': this.props.msg.sender === 'Rick',
-	        'sent': this.props.msg.sender === 'Me'
+	        'receive': this.props.msg.type === 0,
+	        'sent': this.props.msg.type === 1
 	      });
 
 	      var senderClasses = (0, _classnames2.default)({
-	        'receiver': this.props.msg.sender === 'Rick',
-	        'sender': this.props.msg.sender === 'Me'
+	        'receiver': this.props.msg.type === 0,
+	        'sender': this.props.msg.type === 1
 	      });
 
 	      return _react2.default.createElement(
